@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() 
+{
+    int num,rum,sum=0,temp;
+    printf("enter the number");
+    scanf("%d",&num);
+    temp=num;
+    while(num>0)
+      {
+          rum=num%10;
+          sum=sum+(rum*rum*rum); 
+          num=num/10;
+      }
+    if(temp=sum)
+      {
+          printf("ARMSTRONG NUMBER");
+      }
+    else
+      {
+         printf("NOT ARMSTRONG NUMBER"); 
+      }
+    return 0;
+}
