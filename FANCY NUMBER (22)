@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() 
+{
+    int num,rum,ecount=0,ocount=0;
+    printf("enter the number");
+    scanf("%d",&num);
+    while(num>0)
+      {
+          rum=num%10;
+          if(rum%2==0)
+            {
+                ecount++;
+            }
+           else
+            {
+                ocount++;
+            }
+            num=num/10;
+      }
+    if(ecount==ocount)
+      {
+          printf("Fancy Number");
+      }
+    else
+      {
+          printf("Not Fancy Number");
+      }
+    return 0;
+}
