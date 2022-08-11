@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n,pr=1,rem,sum=0;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        pr=pr*rem;
+        sum=sum+rem;
+        n=n/10;
+    }
+    printf("%d",pr-sum);
+}
+
+
+* input 1:
+
+234
+
+* output 1:
+
+15
