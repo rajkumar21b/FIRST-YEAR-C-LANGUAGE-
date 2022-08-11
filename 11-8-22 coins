@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main() 
+{
+    int n,i,pla=1,r=0;
+    scanf("%d",&n);
+    r=n;
+    for(i=1; i<=n; i++)
+       {
+            r=r-i;
+            if(r>i)
+              {
+                  pla++;
+              }
+            else
+              {
+                  break;
+              }
+       }
+    printf("%d",pla);
+    return 0;
+}
+ 
+*input 1:
+ 
+5
+
+*output 1:
+
+2
