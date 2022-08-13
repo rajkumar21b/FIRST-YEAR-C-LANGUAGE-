@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{   
+    int n;
+    printf("enter n value :");
+    scanf("%d",&n);
+    char ch='A',ch1='a';
+    for(int i=1; i<=n; i++)
+      {
+          for(int j=1; j<=i; j++)
+             {
+                 printf("%c%c\t",ch,ch1);
+                 ch++; ch1++;
+             }
+          printf("\n");     
+      }
+    return 0;
+}
+
+*input 1:
+
+enter n value :3
+
+*output 1:
+
+Aa	
+Bb	Cc	
+Dd	Ee	Ff	
