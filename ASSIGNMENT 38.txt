@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main() 
+{
+    int r,c;
+    printf("Enter how many rows \n");
+	scanf("%d",&r);
+	printf("Enter how many cols \n");
+	scanf("%d",&c);
+	int a[r][c];
+	for(int i=0;  i<r; i++)
+	  {
+	      for(int j=0; j<c; j++)
+	        {
+	            scanf("%d",&a[i][j]);
+	        }
+	  }
+	  for(int i=0;  i<r; i++)
+	  {
+	      for(int j=0; j<c; j++)
+	        {
+	            printf("%d\t",a[i][j]);
+	        }
+	      printf("\n");     
+	  }
+	  
+	  for(int i=0;  i<r; i++)
+	  {   
+	      int sum=0;
+	      for(int j=0; j<c; j++)
+	        {
+	           sum=sum+a[i][j];
+	        }
+	      printf("the %d row sum is %d\n",i+1,sum); 
+	  }
+	
+    return 0;
+}
+
+*INPUT 1 :
+
+Enter how many rows 
+3
+Enter how many cols 
+3
+1 2 3
+4 5 6
+7 8 9
+
+*OUTPUT 1 :
+
+1	2	3	
+4	5	6	
+7	8	9	
+
+the 1 row sum is 6
+the 2 row sum is 15
+the 3 row sum is 24
