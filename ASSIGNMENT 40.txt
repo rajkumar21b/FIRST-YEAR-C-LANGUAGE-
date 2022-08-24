@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main() 
+{
+    int n;
+    printf("enter n value :");
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++)
+      {   
+          int fix=n;
+          for(int j=1; j<=i; j++)
+            {
+                printf("%d ",fix);
+                fix--;
+            }
+          printf("\n");    
+      }
+
+    return 0;
+}
+
+*INPUT 1 :
+
+enter n value :6
+
+*OUTPUT 1 :
+
+6 
+6 5 
+6 5 4 
+6 5 4 3 
+6 5 4 3 2 
+6 5 4 3 2 1 
+
+*INPUT 1 :
+
+enter n value :10
+
+*OUTPUT 1 :
+
+10 
+10 9 
+10 9 8 
+10 9 8 7 
+10 9 8 7 6 
+10 9 8 7 6 5 
+10 9 8 7 6 5 4 
+10 9 8 7 6 5 4 3 
+10 9 8 7 6 5 4 3 2 
+10 9 8 7 6 5 4 3 2 1 
