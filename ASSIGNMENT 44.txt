@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[30];
+    puts("enter a string");
+    scanf("%s",str);
+    int i,cu=0,cl=0;
+    for(i=0; str[i]!='\0'; i++)
+      {
+          if(isupper(str[i]))
+            {
+                cu++;
+            }
+          if(islower(str[i]))
+            {
+                cl++;
+            }  
+
+      }
+    printf("count of uppercase characters %d\n",cu);  
+    printf("count of lowercase characters %d",cl);  
+}
+
+*OUTPUT 1 :
+
+enter a string
+RajKumar
+
+*INPUT 1 :
+
+count of uppercase characters 2
+count of lowercase characters 6
