@@ -1,0 +1,27 @@
+#include <stdio.h>
+void main() 
+{
+    int ans,num;
+    printf("enter the number");
+    scanf("%d",&num);
+    ans=evenorodd(num);
+    if(ans=1)
+    printf("the given number is even");
+    else
+    printf("the given number is odd");
+}
+int evenorodd(int x)
+{
+    if(x%2==0)
+    return 1;
+    else
+    return 0;
+}
+
+*INPUT 1:
+
+enter the number 4
+
+*OUTPUT 1:
+
+the given number is even
