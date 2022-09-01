@@ -1,0 +1,26 @@
+#include <stdio.h>
+void main() 
+{
+    int ans,num;
+    printf("enter the number");
+    scanf("%d",&num);
+    ans=fact(num);
+    printf("%d",ans);
+}
+int fact(int x)
+{ 
+    int sum=1;
+    for(int i=1; i<=x; i++)
+      {
+          sum=sum*i;
+      }
+    return sum;  
+}
+
+*INPUT 1 :
+
+enter the number 6
+
+*OUTPUT 1 :
+
+720
